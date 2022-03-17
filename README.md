@@ -73,7 +73,7 @@ LGBMClassifier with binned features ( month and day) is the best performing mode
 
  <br>
 The code for the model can be found in below notebook <br>
-notebook link : https://github.com/jsJyo/TermDepositSubscription/blob/739f6103c509561e440bec6fcdb98f4bf5ee9166/TermDepositSubscription.ipynb
+notebook link : https://nbviewer.org/github/jsJyo/TermDepositSubscription/blob/main/Term_Deposit_Subscription.ipynb
 
 # Conclusion:
 
