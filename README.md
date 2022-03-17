@@ -54,22 +54,22 @@ Along with different model combinations I have performed some feature engineerin
 
 |Model Name|Accuracy Score|roc_auc score|Class Weight|Classifier optimization param|Param Optimization|
 |---|---|---|---|---|---|
-11|LGBMClassifier(Features Binned\#8)|0\.869000|0\.929000|balanced|auc|Yes|
+11|LGBMClassifier(Features Binned\#8)|0\.909667|0\.951285|balanced|auc|Yes|
 |1|LGBMClassifier|0\.887417|0\.884991|balanced|auc|No|
 |4|SVC Linear Kernel|0\.856000|0\.870000|balanced|none|Yes|
 |0|LogisticRegressionCV|0\.937146|0\.867344|balanced|roc_auc|No|
 |5|LogisticRegressionCV|0\.937000|0\.867000|balanced|roc_auc|Yes|
-|3|LGBMClassifier(iter\#1500)|0\.763000|0\.865000|balanced|auc|Yes|
-|2|LGBMClassifier(iter\#2000)|0\.745000|0\.855000|balanced|auc|Yes|
-|10|LGBMClassifier(Features Binned\#1500)|0\.717583|0\.847699|balanced|auc|Yes|
-|6|StackingClassifier|0.\678000|0\.813000|--|--|No|
-|9|LGBMClassifier(Features removed)|0\.499000|0\.726000|balanced|auc|Yes|
-|7|XGBClassifier|0\.955000|0\.705000|--|aucpr|Yes|
-|8|XGBClassifier(Features removed)|0\.941000|0\.612000|balanced|roc_auc|Yes|
+|3|LGBMClassifier(iter\#1500)|0\.75725|0\.862765|balanced|auc|Yes|
+|2|LGBMClassifier(iter\#2000)|0\.745167|0\.855194|balanced|auc|Yes|
+|10|LGBMClassifier(Features Binned\#500)|0\.703667|0\.840194|balanced|auc|Yes|
+|6|StackingClassifier|0.\678250|0\.814363|--|--|No|
+|7|XGBClassifier|0\.962333|0\.747744|--|aucpr|Yes|
+|9|LGBMClassifier(Features removed)|0\.480917|0\.717434|balanced|auc|Yes|
+|8|XGBClassifier(Features removed)|0\.941333|0\.613068|balanced|roc_auc|Yes|
 
 
 
-LGBMClassifier with binned features ( month and day) is the best performing model for the problem at hand.  The model achieved 93.3% accuracy and 96.4% precision-recall AUC, the model is able to identify positive labels with 100% accuracy ( perfect recall ).  <br>
+LGBMClassifier with binned features ( month and day) is the best performing model for the problem at hand.  The model achieved 90.9% accuracy and 95.12% precision-recall AUC, the model is able to identify positive labels with 100% accuracy ( perfect recall ).  <br>
 
  <br>
 The code for the model can be found in below notebook <br>
