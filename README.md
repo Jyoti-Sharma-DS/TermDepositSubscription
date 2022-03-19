@@ -86,40 +86,15 @@ v. people in blue color jobs are most likely to subscribe as compared to people 
 <br>
 
 
-
-Based on Customer segmentation performed for subscriber data below are the findings<br>
-
-
-For cluster 0(majority segment ) , Customers shared below mentioned traits<br>
-i. marital status is married (followed by single)<br>
-ii. have secondary education level<br>
-iii. are in Blue-Collar jobs<br>
-iv. have no personal loan and never defaulted<br>
-v. have housing loan<br>
-vi. were contacted for less than 300 seconds<br>
-vii. have balance less than 3000 and are between age group 32-55 years<br>
-are the most likely going to subscribe to the product.<br>
-
-
-Profile 2 for customers <br>
-For cluster 1(second largest cluster) , we can say customers whose<br>
-i. marital status is single(followed by married)<br>
-ii. have tertiary education level<br>
-iii. are in management jobs<br>
-iv. have no personal loan, no housing loan and never defaulted<br>
-v. were contacted for less than 300 seconds<br>
-vi. have balance less than 3000 and are between age group 32-55 years <br>
-
-Profile 3 for Subscribing customers <br>
-For cluster 2(smallest cluster) , we can say customers whose<br>
-i. marital status is married<br>
-ii. have secondary education level<br>
-iii. are retired(followed by technician job)<br>
-iv. have no personal loan, no housing loan and never defaulted<br>
-v. were contacted for less than 400 seconds<br>
-vi. have balance less than 2000 and are between age group 33-60 years<br>
-are the most likely going to subscribe to the product.<br>
-
-
+After visualising all three clusters we can say below mentioned traits were observed amongst majority of subscribing customers <br>
+i.  marrital status: married, single <br>
+ii. education level: secondary, tertiary<br>
+iii. jobs: Blue-Collar, management, retired<br>
+iv. Personal loan: No personal loans <br>
+v. default: never defaulted on loan<br>
+vi. housing loan: cluster 0 (biggest cluster) customer had housing loan, where in cluster 1 & 2 customers didnot have any housing loan.<br>
+vii. contact : Majority of them were contacted for less than 300 seconds( cluster 0 & 1), few had to be contacted in less than 400 seconds range.<br>
+viii. Balance: Majority ofcustomers had balance less than 3000 (cluster 0 & 1), balance less than 2000 for cluster 2.
+ix. age: Age group is between 32-35 (cluster 1&0), range gets wider upto 60 for cluster 2.<br>
 
 
