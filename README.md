@@ -52,28 +52,28 @@ Along with different model combinations I have performed some feature engineerin
 
 
 
-|Model Name|Accuracy Score|roc_auc score|Class Weight|Classifier optimization param|Param Optimization|
-|---|---|---|---|---|---|
-11|LGBMClassifier(Features Binned\#8)|0\.869000|0\.929000|balanced|auc|Yes|
+| |Model Name|Accuracy Score|roc_auc score|Class Weight|Classifier optimization param|Param Optimization|
+|---|---|---|---|---|---|---|
+11|LGBMClassifier(Features Binned\#8)|0\.909667|0\.951285|balanced|auc|Yes|
 |1|LGBMClassifier|0\.887417|0\.884991|balanced|auc|No|
 |4|SVC Linear Kernel|0\.856000|0\.870000|balanced|none|Yes|
 |0|LogisticRegressionCV|0\.937146|0\.867344|balanced|roc_auc|No|
 |5|LogisticRegressionCV|0\.937000|0\.867000|balanced|roc_auc|Yes|
-|3|LGBMClassifier(iter\#1500)|0\.763000|0\.865000|balanced|auc|Yes|
-|2|LGBMClassifier(iter\#2000)|0\.745000|0\.855000|balanced|auc|Yes|
-|10|LGBMClassifier(Features Binned\#1500)|0\.717583|0\.847699|balanced|auc|Yes|
-|6|StackingClassifier|0.\678000|0\.813000|--|--|No|
-|9|LGBMClassifier(Features removed)|0\.499000|0\.726000|balanced|auc|Yes|
-|7|XGBClassifier|0\.955000|0\.705000|--|aucpr|Yes|
-|8|XGBClassifier(Features removed)|0\.941000|0\.612000|balanced|roc_auc|Yes|
+|3|LGBMClassifier(iter\#1500)|0\.75725|0\.862765|balanced|auc|Yes|
+|2|LGBMClassifier(iter\#2000)|0\.745167|0\.855194|balanced|auc|Yes|
+|10|LGBMClassifier(Features Binned\#500)|0\.703667|0\.840194|balanced|auc|Yes|
+|6|StackingClassifier|0.\678250|0\.814363|--|--|No|
+|7|XGBClassifier|0\.962333|0\.747744|--|aucpr|Yes|
+|9|LGBMClassifier(Features removed)|0\.480917|0\.717434|balanced|auc|Yes|
+|8|XGBClassifier(Features removed)|0\.941333|0\.613068|balanced|roc_auc|Yes|
 
 
 
-LGBMClassifier with binned features ( month and day) is the best performing model for the problem at hand.  The model achieved 93.3% accuracy and 96.4% precision-recall AUC, the model is able to identify positive labels with 100% accuracy ( perfect recall ).  <br>
+LGBMClassifier with binned features ( month and day) is the best performing model for the problem at hand.  The model achieved 90.9% accuracy and 95.12% precision-recall AUC, the model is able to identify positive labels with 100% accuracy ( perfect recall ).  <br>
 
  <br>
 The code for the model can be found in below notebook <br>
-notebook link : https://github.com/jsJyo/TermDepositSubscription/blob/739f6103c509561e440bec6fcdb98f4bf5ee9166/TermDepositSubscription.ipynb
+notebook link : https://nbviewer.org/github/jsJyo/TermDepositSubscription/blob/main/Term_Deposit_Subscription.ipynb
 
 # Conclusion:
 
@@ -86,40 +86,15 @@ v. people in blue color jobs are most likely to subscribe as compared to people 
 <br>
 
 
-
-Based on Customer segmentation performed for subscriber data below are the findings<br>
-
-
-For cluster 0(majority segment ) , Customers shared below mentioned traits<br>
-i. marital status is married (followed by single)<br>
-ii. have secondary education level<br>
-iii. are in Blue-Collar jobs<br>
-iv. have no personal loan and never defaulted<br>
-v. have housing loan<br>
-vi. were contacted for less than 300 seconds<br>
-vii. have balance less than 3000 and are between age group 32-55 years<br>
-are the most likely going to subscribe to the product.<br>
-
-
-Profile 2 for customers <br>
-For cluster 1(second largest cluster) , we can say customers whose<br>
-i. marital status is single(followed by married)<br>
-ii. have tertiary education level<br>
-iii. are in management jobs<br>
-iv. have no personal loan, no housing loan and never defaulted<br>
-v. were contacted for less than 300 seconds<br>
-vi. have balance less than 3000 and are between age group 32-55 years <br>
-
-Profile 3 for Subscribing customers <br>
-For cluster 2(smallest cluster) , we can say customers whose<br>
-i. marital status is married<br>
-ii. have secondary education level<br>
-iii. are retired(followed by technician job)<br>
-iv. have no personal loan, no housing loan and never defaulted<br>
-v. were contacted for less than 400 seconds<br>
-vi. have balance less than 2000 and are between age group 33-60 years<br>
-are the most likely going to subscribe to the product.<br>
-
-
+After visualising all three clusters we can say below mentioned traits were observed amongst majority of subscribing customers <br>
+i.  marrital status: married, single <br>
+ii. education level: secondary, tertiary<br>
+iii. jobs: Blue-Collar, management, retired<br>
+iv. Personal loan: No personal loans <br>
+v. default: never defaulted on loan<br>
+vi. housing loan: cluster 0 (biggest cluster) customer had housing loan, where in cluster 1 & 2 customers didnot have any housing loan.<br>
+vii. contact : Majority of them were contacted for less than 300 seconds( cluster 0 & 1), few had to be contacted in less than 400 seconds range.<br>
+viii. Balance: Majority ofcustomers had balance less than 3000 (cluster 0 & 1), balance less than 2000 for cluster 2.
+ix. age: Age group is between 32-35 (cluster 1&0), range gets wider upto 60 for cluster 2.<br>
 
 
