@@ -52,8 +52,8 @@ Along with different model combinations I have performed some feature engineerin
 
 
 
-|Model Name|Accuracy Score|roc_auc score|Class Weight|Classifier optimization param|Param Optimization|
-|---|---|---|---|---|---|
+| |Model Name|Accuracy Score|roc_auc score|Class Weight|Classifier optimization param|Param Optimization|
+|---|---|---|---|---|---|---|
 11|LGBMClassifier(Features Binned\#8)|0\.909667|0\.951285|balanced|auc|Yes|
 |1|LGBMClassifier|0\.887417|0\.884991|balanced|auc|No|
 |4|SVC Linear Kernel|0\.856000|0\.870000|balanced|none|Yes|
