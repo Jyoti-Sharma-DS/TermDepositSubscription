@@ -3,7 +3,7 @@
 # TermDepositSubscription
 
 ## Project Overview:
-The goal of this project is to build a model for predicting if a customer will bu a investment product or not. To solve this problem the data consists of multiple feature providing information about different customers. The metrics used are 
+The goal of this project is to build a model for predicting if a customer will buy an investment product or not. To solve this problem the data consists of multiple feature providing information about different customers. The metrics used are 
 
 i.  age : age of customer (numeric)
 
